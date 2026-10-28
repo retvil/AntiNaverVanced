@@ -158,7 +158,7 @@
 
 ## [2.0.0] - 2026-10-20
 
-Форк [TheCawa/AntiNaver](https://github.com/TheCawa/AntiNaver) 1.3.
+Форк [TheCawa/AntiYandex](https://github.com/TheCawa/AntiYandex) 1.3.
 
 ### Додано
 - **Сканер hijack пошуку** — детектить 11 векторів, якими Naver
@@ -205,7 +205,7 @@
 
 ## [1.3.0] - upstream
 
-База [TheCawa/AntiNaver](https://github.com/TheCawa/AntiNaver):
+База [TheCawa/AntiYandex](https://github.com/TheCawa/AntiYandex):
 - Завершення процесів Naver.Браузера (`browser.exe`, `naver.exe`)
 - Пошук шляхів встановлення
 - Чистка записів Uninstall у реєстрі
@@ -216,3 +216,4 @@
 [2.1.2]: https://github.com/retvil/AntiNaverVanced/compare/v2.1.0...v2.1.2
 [2.1.0]: https://github.com/retvil/AntiNaverVanced/compare/v2.0.0...v2.1.0
 [2.0.0]: https://github.com/retvil/AntiNaverVanced/compare/v1.3.0...v2.0.0
+

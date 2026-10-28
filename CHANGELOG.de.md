@@ -165,7 +165,7 @@ und dieses Projekt folgt [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [2.0.0] - 2026-10-20
 
-Fork von [TheCawa/AntiNaver](https://github.com/TheCawa/AntiNaver) 1.3.
+Fork von [TheCawa/AntiYandex](https://github.com/TheCawa/AntiYandex) 1.3.
 
 ### Hinzugefügt
 - **Such-Hijack-Scanner** — erkennt 11 Vektoren, mit denen Naver sich als
@@ -214,7 +214,7 @@ Fork von [TheCawa/AntiNaver](https://github.com/TheCawa/AntiNaver) 1.3.
 
 ## [1.3.0] - upstream
 
-Basis von [TheCawa/AntiNaver](https://github.com/TheCawa/AntiNaver):
+Basis von [TheCawa/AntiYandex](https://github.com/TheCawa/AntiYandex):
 - Beendigung der Naver-Browser-Prozesse (`browser.exe`, `naver.exe`)
 - Suche nach Installationspfaden
 - Bereinigung der Uninstall-Registry-Einträge
@@ -225,3 +225,4 @@ Basis von [TheCawa/AntiNaver](https://github.com/TheCawa/AntiNaver):
 [2.1.2]: https://github.com/retvil/AntiNaverVanced/compare/v2.1.0...v2.1.2
 [2.1.0]: https://github.com/retvil/AntiNaverVanced/compare/v2.0.0...v2.1.0
 [2.0.0]: https://github.com/retvil/AntiNaverVanced/compare/v1.3.0...v2.0.0
+

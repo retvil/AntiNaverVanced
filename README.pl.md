@@ -14,7 +14,7 @@ Naver nie instaluje tylko przeglądarki — po cichu rejestruje się jako domyś
 
 ## Funkcje
 
-- **Skaner przejęć** — wykrywa 40 wektorów: ścieżki instalacji, wpisy Uninstall w rejestrze, asocjacja `UserChoice`, rejestracje `StartMenuInternet`, drzewa kluczy `Software\Naver`, przejęcie przez polityki `DefaultSearchProvider*`, `Preferences` profili Chromium, słowa kluczowe w `Web Data` (SQLite), `search.json.mozlz4` Firefox, legacy `SearchScopes`, wpisy autostartu, zaplanowane zadania, usługi Windows, Punto Switcher, skojarzenia plików, integracja powłoki Naver Disk, wyłączony autostart, App Paths, skróty, pozostałości w ProgramData/Roaming, wpisy hosts, reguły zapory, protokoły URI, rozszerzenia przeglądarek, ciasteczka naver.ru, asocjacje „otwórz za pomocą“, ślady Prefetch/WER, wyjątki Defender, układy klawiatury, przejęcie strony startowej IE, polityki adresów startowych (`RestoreOnStartupURLs`), strona domowa Firefox, mapa stref IE, wpisy RegisteredApplications, ślady MUICache, instalatory w %TEMP%, aplikacje ze Store (Naver Music, Alice), katalogi produktów, katalogi danych lokalnych, Naver.DNS
+- **Skaner przejęć** — wykrywa 40 wektorów: ścieżki instalacji, wpisy Uninstall w rejestrze, asocjacja `UserChoice`, rejestracje `StartMenuInternet`, drzewa kluczy `Software\Naver`, przejęcie przez polityki `DefaultSearchProvider*`, `Preferences` profili Chromium, słowa kluczowe w `Web Data` (SQLite), `search.json.mozlz4` Firefox, legacy `SearchScopes`, wpisy autostartu, zaplanowane zadania, usługi Windows, IME Switcher, skojarzenia plików, integracja powłoki Naver Disk, wyłączony autostart, App Paths, skróty, pozostałości w ProgramData/Roaming, wpisy hosts, reguły zapory, protokoły URI, rozszerzenia przeglądarek, ciasteczka naver.ru, asocjacje „otwórz za pomocą“, ślady Prefetch/WER, wyjątki Defender, układy klawiatury, przejęcie strony startowej IE, polityki adresów startowych (`RestoreOnStartupURLs`), strona domowa Firefox, mapa stref IE, wpisy RegisteredApplications, ślady MUICache, instalatory w %TEMP%, aplikacje ze Store (Naver Music, Alice), katalogi produktów, katalogi danych lokalnych, Naver.DNS
 - **Usuwanie jednym kliknięciem** — każdy wektor ma własny remover; zablokowane bazy są uczciwie raportowane, bez crashy
 - **Twarda polityka wyszukiwania** — blokuje wyszukiwarkę domyślną na jednej z 10 wyszukiwarek (Google, Bing, DuckDuckGo, Brave Search, Startpage, Mojeek, Qwant, Ecosia, Yahoo, SearXNG) przez polityki HKLM dla Chrome, Edge, Brave, Vivaldi, Opera i Naver Browser + `policies.json` dla Firefox/Waterfox
 - **Czyszczenie polityk** — usuwa wartości `DefaultSearchProvider*` Navera z rejestru
@@ -35,7 +35,7 @@ Naver nie instaluje tylko przeglądarki — po cichu rejestruje się jako domyś
 Pobierz z [Releases](https://github.com/retvil/AntiNaverVanced/releases):
 
 - **Windows** — `AntiNaverVanced.exe` (portable, jeden plik, ~35 MB) — usuwa Naver Browser i Naver Search
-- **Windows** — `AntiNaverExtended.exe` (portable, jeden plik, ~35 MB) — usuwanie wszystkich produktów Naver (Naver Disk, historia Punto Switcher, ślady w całym systemie, aplikacje ze Store, Naver.DNS)
+- **Windows** — `AntiNaverExtended.exe` (portable, jeden plik, ~35 MB) — usuwanie wszystkich produktów Naver (Naver Disk, historia IME Switcher, ślady w całym systemie, aplikacje ze Store, Naver.DNS)
 
 Uruchom **jako administrator** — polityki HKLM i czyszczenie rejestru wymagają podwyższonych uprawnień.
 

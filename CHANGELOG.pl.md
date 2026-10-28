@@ -46,16 +46,16 @@ a projekt stosuje [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ### Dodano
 - **Wydanie Extended**: skan aplikacji Store (Appx) — wykrywa Naver Music,
-  Alice, Messenger i inne aplikacje Store Naver, usuwa je przez
+  Messenger, Messenger i inne aplikacje Store Naver, usuwa je przez
   `Remove-AppxPackage`
 - **Wydanie Extended**: skan katalogów produktów nieprzeglądarkowych pod
-  `Program Files\Naver\` (Naver Disk, Punto Switcher, IME, ...) z kopią
+  `Program Files\Naver\` (Naver Disk, Naver IME Switcher, IME, ...) z kopią
   zapasową przed usunięciem
 - **Wydanie Extended**: skan lokalnych danych nieprzeglądarkowych pod
-  `%LOCALAPPDATA%\Naver\` (lokalne dane Punto Switcher, updater Naver
+  `%LOCALAPPDATA%\Naver\` (lokalne dane Naver IME Switcher, updater Naver
   Disk, buildy Beta) — z potwierdzeniem, kopia zapasowa przed usunięciem
 - **Wydanie Extended**: „Kill Processes” kończy teraz procesy wszystkich
-  produktów Naver (Naver Disk, Punto Switcher, aplikacje Store), nie
+  produktów Naver (Naver Disk, Naver IME Switcher, aplikacje Store), nie
   tylko przeglądarki
 
 ## [2.5.0] - 2026-10-21
@@ -81,7 +81,7 @@ a projekt stosuje [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   `OpenWithProgids`/`OpenWithList`, ślady Prefetch / CrashDumps / WER,
   wyjątki Windows Defender, niestandardowe układy klawiatury (Naver IME)
 - Potwierdzenie zgody: znaleziska dotykające danych użytkownika (pliki
-  Naver Disk, historia Punto Switcher, rozszerzenia, ciasteczka, wyjątki
+  Naver Disk, historia Naver IME Switcher, rozszerzenia, ciasteczka, wyjątki
   Defender) wymagają jawnego dodatkowego potwierdzenia przed usunięciem
 - Testy jednostkowe dla detekcji bajtów `.lnk`, filtrowania linii hosts,
   parsowania wyjścia zapory i pokrycia prefiksów zgody
@@ -90,8 +90,8 @@ a projekt stosuje [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ### Dodano
 - Wektory przejęcia 13–15: usługi Windows (skan po rejestrze, usuwanie
-  przez `sc stop` + `sc delete`), Punto Switcher (detekcja po markerze
-  `punto`), skojarzenia plików (skan + usunięcie ProgId w
+  przez `sc stop` + `sc delete`), Naver IME Switcher (detekcja po markerze
+  `ime`), skojarzenia plików (skan + usunięcie ProgId w
   `FileExts\<ext>\UserChoice`)
 - Dialog wyboru po skanie: wybór dokładnie, które znaleziska usunąć,
   zamiast „wszystko albo nic”
@@ -99,7 +99,7 @@ a projekt stosuje [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   `%APPDATA%\AntiNaverVanced\exclusions.json` — przyszłe skany automatycznie
   je odznaczają, ale pozostają wybieralne w dialogu; wykluczenia można
   zresetować z dialogu
-- Testy jednostkowe persystencji wykluczeń i markera Punto Switcher
+- Testy jednostkowe persystencji wykluczeń i markera Naver IME Switcher
 
 ## [2.2.0] - 2026-10-20
 
@@ -141,7 +141,7 @@ a projekt stosuje [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 ## [2.1.2] - 2026-10-20
 
 ### Zmieniono
-- Tytuł aplikacji skrócony do „Удаление Яндекс” / „Remove Naver”
+- Tytuł aplikacji skrócony do „Удаление Naver” / „Remove Naver”
   (ru/en/uk)
 - Stopka przypięta do prawego dolnego rogu: autor, wersja i klikalny link
   do GitHub

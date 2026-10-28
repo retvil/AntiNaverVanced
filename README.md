@@ -14,7 +14,7 @@ Naver doesn't just install a browser — it quietly registers itself as the defa
 
 ## Features
 
-- **Hijack scanner** — detects 40 vectors: install paths, uninstall registry entries, `UserChoice` default-browser association, `StartMenuInternet` registrations, `Software\Naver` key trees, `DefaultSearchProvider*` policy hijack, Chromium profile `Preferences`, `Web Data` SQLite keywords, Firefox `search.json.mozlz4`, legacy `SearchScopes`, autostart entries, scheduled tasks, Windows services, Punto Switcher, file associations, Naver Disk shell integration, disabled autostart, App Paths, shortcuts, ProgramData/Roaming leftovers, hosts entries, firewall rules, URI protocols, browser extensions, naver.ru cookies, open-with associations, Prefetch/WER traces, Defender exclusions, keyboard layouts, IE Start Page hijack, startup-URL policies (`RestoreOnStartupURLs`), Firefox homepage, IE zone map, RegisteredApplications entries, MUICache traces, %TEMP% installers, Store apps (Naver Music, Alice), product directories, local data directories, Naver.DNS
+- **Hijack scanner** — detects 40 vectors: install paths, uninstall registry entries, `UserChoice` default-browser association, `StartMenuInternet` registrations, `Software\Naver` key trees, `DefaultSearchProvider*` policy hijack, Chromium profile `Preferences`, `Web Data` SQLite keywords, Firefox `search.json.mozlz4`, legacy `SearchScopes`, autostart entries, scheduled tasks, Windows services, IME Switcher, file associations, Naver Disk shell integration, disabled autostart, App Paths, shortcuts, ProgramData/Roaming leftovers, hosts entries, firewall rules, URI protocols, browser extensions, naver.ru cookies, open-with associations, Prefetch/WER traces, Defender exclusions, keyboard layouts, IE Start Page hijack, startup-URL policies (`RestoreOnStartupURLs`), Firefox homepage, IE zone map, RegisteredApplications entries, MUICache traces, %TEMP% installers, Store apps (Naver Music, Alice), product directories, local data directories, Naver.DNS
 - **One-click removal** — every detected vector is removed with a dedicated remover; locked databases are reported, never crash
 - **Hard search policy** — locks the default search to one of 10 engines (Google, Bing, DuckDuckGo, Brave Search, Startpage, Mojeek, Qwant, Ecosia, Yahoo, SearXNG) via HKLM policies for Chrome, Edge, Brave, Vivaldi, Opera and Naver Browser, plus `policies.json` for Firefox/Waterfox
 - **Policy cleanup** — strips Naver `DefaultSearchProvider*` values from the registry
@@ -35,7 +35,7 @@ Naver doesn't just install a browser — it quietly registers itself as the defa
 Download from [Releases](https://github.com/retvil/AntiNaverVanced/releases):
 
 - **Windows** — `AntiNaverVanced.exe` (portable, single file, ~35 MB) — removes Naver Browser and Naver Search
-- **Windows** — `AntiNaverExtended.exe` (portable, single file, ~35 MB) — removal of every Naver product (Naver Disk, Punto Switcher history, system-wide traces, Store apps, Naver.DNS)
+- **Windows** — `AntiNaverExtended.exe` (portable, single file, ~35 MB) — removal of every Naver product (Naver Disk, IME Switcher history, system-wide traces, Store apps, Naver.DNS)
 
 Run it **as administrator** — HKLM policies and registry cleanup require elevated rights.
 

@@ -45,13 +45,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **Extended edition**: Store (Appx) app scan — detects Naver Music, Alice,
   Messenger and other Naver Store apps, removes them via `Remove-AppxPackage`
 - **Extended edition**: non-browser product directory scan under
-  `Program Files\Naver\` (Naver Disk, Punto Switcher, IME, ...) with
+  `Program Files\Naver\` (Naver Disk, IME Switcher, IME, ...) with
   backup-before-delete removal
 - **Extended edition**: non-browser local data scan under
-  `%LOCALAPPDATA%\Naver\` (Punto Switcher local data, Naver Disk updater,
+  `%LOCALAPPDATA%\Naver\` (IME Switcher local data, Naver Disk updater,
   Beta builds) — consent-gated, backed up before deletion
 - **Extended edition**: "Kill Processes" now terminates every Naver product
-  process (Naver Disk, Punto Switcher, Store apps), not just the browser
+  process (Naver Disk, IME Switcher, Store apps), not just the browser
 
 ## [2.5.0] - 2026-10-21
 
@@ -75,7 +75,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   CrashDumps / WER traces, Windows Defender exclusions, custom keyboard
   layouts (Naver IME)
 - Consent confirmation: findings that touch user data (Naver Disk files,
-  Punto Switcher history, extensions, cookies, Defender exclusions) require
+  IME Switcher history, extensions, cookies, Defender exclusions) require
   an explicit extra confirmation before removal
 - Unit tests for `.lnk` byte detection, hosts-line filtering, firewall output
   parsing and consent-prefix coverage
@@ -84,7 +84,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 - 13th–15th hijack vectors: Windows services (registry-based scan, `sc stop` +
-  `sc delete` removal), Punto Switcher (detection via the `punto` marker),
+  `sc delete` removal), IME Switcher (detection via the `ime` marker),
   file associations (`FileExts\<ext>\UserChoice` ProgId scan + removal)
 - Selection dialog after scan: pick exactly which findings to remove instead
   of all-or-nothing removal
@@ -92,7 +92,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   `%APPDATA%\AntiNaverVanced\exclusions.json` — future scans deselect them
   automatically, but they stay selectable in the dialog; exclusions can be
   reset from the dialog
-- Unit tests for exclusions persistence and the Punto Switcher marker
+- Unit tests for exclusions persistence and the IME Switcher marker
 
 ## [2.2.0] - 2026-10-20
 
@@ -124,7 +124,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [2.1.2] - 2026-10-20
 
 ### Changed
-- App title shortened to "Удаление Яндекс" / "Remove Naver" (ru/en/uk)
+- App title shortened to "Удаление Naver" / "Remove Naver" (ru/en/uk)
 - Footer pinned to the bottom-right corner: author, version and clickable GitHub link
 - Repository link set to `https://github.com/retvil/AntiNaverVanced`
 

@@ -10,15 +10,15 @@
 ## [2.8.0] - 2026-10-22
 
 ### Қосылды
-- **IE аймақ картасы сканы (zone map)** — Яндекс домендерінің zone-map
+- **IE аймақ картасы сканы (zone map)** — Naver домендерінің zone-map
   жазбаларын табады («сенімді сайттар» қалдықтары); жою доменнің ішкі ағашын
   алып тастайды (алдымен экспорт)
 - **RegisteredApplications сканы** — әдепкі қосымшалар метадеректеріндегі
-  Яндекс жазбаларын табады; жою мәнді өшіреді (алдымен экспорт)
-- **MUICache сканы** — Яндекс орындалатын файлдарының іске қосу іздерін
+  Naver жазбаларын табады; жою мәнді өшіреді (алдымен экспорт)
+- **MUICache сканы** — Naver орындалатын файлдарының іске қосу іздерін
   табады; жою кеш мәнін өшіреді (алдымен экспорт)
 - **%TEMP% ішіндегі орнатқыш іздері** — scan_traces енді пайдаланушының
-  уақытша папкасында қалған Яндекс орнатқыштарын да репорттайды
+  уақытша папкасында қалған Naver орнатқыштарын да репорттайды
 - **Per-user өнім каталогтары** — scan_product_dirs енді
   `%LOCALAPPDATA%\Programs\Naver*` жолын да қамтиды (Naver Music /
   Messenger / Translate legacy-орнатулары), браузер папкасы шығарылып
@@ -27,43 +27,43 @@
   жолының астында жатқан процестерді де матчтайды (crashpad, updater),
   тек browser.exe/naver.exe атауларының тар тізімі емес
 - **Бастапқы URL hijack сканы** — `RestoreOnStartupURLs` enterprise-саясаттарындағы
-  Яндекс URL-дарын табады (Edge, Chrome, Chromium, Brave, Vivaldi, Opera,
-  Яндекс Browser); жою Яндекс мәндерін тазартады
+  Naver URL-дарын табады (Edge, Chrome, Chromium, Brave, Vivaldi, Opera,
+  Naver Browser); жою Naver мәндерін тазартады
 - **Firefox басты беті hijack сканы** — Firefox/Waterfox `prefs.js`
-  ішіндегі Яндекске апаратын `browser.startup.homepage` табады; жою файлды
+  ішіндегі Naverке апаратын `browser.startup.homepage` табады; жою файлды
   қайта жазады (алдымен бекап)
 
 ## [2.7.0] - 2026-10-21
 
 ### Қосылды
-- **Naver.DNS сканы** (Extended) — Яндекс DNS серверлерімен (77.88.8.x
+- **Naver.DNS сканы** (Extended) — Naver DNS серверлерімен (77.88.8.x
   basic/safe/family) бапталған желі адаптерлерін табады; жою адаптерге
   автоматты DNS қайтарады; растаумен
-- **Бастапқы бет hijack сканы** — Яндекс/naver.com көрсететін legacy IE басты
+- **Бастапқы бет hijack сканы** — Naver/naver.com көрсететін legacy IE басты
   бетін (`HKCU\...\Internet Explorer\Main\Start Page`) табады; жою әдепкіні
   қайтарады (еккі басылым)
 
 ## [2.6.0] - 2026-10-21
 
 ### Қосылды
-- **Extended басылымы**: Store (Appx) қосымша сканы — Naver Music, Alice,
-  Messenger және басқа Яндекс Store қосымшаларын табады,
+- **Extended басылымы**: Store (Appx) қосымша сканы — Naver Music, Messenger,
+  Messenger және басқа Naver Store қосымшаларын табады,
   `Remove-AppxPackage` арқылы жояды
 - **Extended басылымы**: `Program Files\Naver\` астындағы браузерлік емес
-  өнім каталогтарын скан (Naver Disk, Punto Switcher, IME, ...) — жою
+  өнім каталогтарын скан (Naver Disk, Naver IME Switcher, IME, ...) — жою
   алдында бекап
 - **Extended басылымы**: `%LOCALAPPDATA%\Naver\` астындағы браузерлік емес
-  жергілікті деректер сканы (Punto Switcher жергілікті деректері, Naver
+  жергілікті деректер сканы (Naver IME Switcher жергілікті деректері, Naver
   Disk апдейтері, Beta жинақтары) — растаумен, жою алдында бекап
-- **Extended басылымы**: «Kill Processes» енді тек браузерді емес, Яндекстің
-  барлық өнім процестерін (Naver Disk, Punto Switcher, Store қосымшалары)
+- **Extended басылымы**: «Kill Processes» енді тек браузерді емес, Naverтің
+  барлық өнім процестерін (Naver Disk, Naver IME Switcher, Store қосымшалары)
   аяқтайды
 
 ## [2.5.0] - 2026-10-21
 
 ### Қосылды
 - Бір код базасынан екі басылым: **AntiNaverVanced** (Naver Browser +
-  Naver Search жою) және **AntiNaverExtended** (Яндекстің барлық
+  Naver Search жою) және **AntiNaverExtended** (Naverтің барлық
   өнімдері) — `profiles.py` ішіндегі өнім профильдері скан ауқымын таңдайды,
   ортақ GUI `app.py` ішінде, жұқа кіру нүктелері `main.py` / `main_extended.py`
 - `build.bat` енді екі EXE де жинайды
@@ -82,7 +82,7 @@
   Prefetch / CrashDumps / WER іздері, Windows Defender ерекшеліктері,
   пайдаланушы пернетақта орналасулары (Naver IME)
 - Растау: пайдаланушы деректеріне қатысты табылғандар (Naver Disk файлдары,
-  Punto Switcher тарихы, кеңейтулер, cookie файлдары, Defender ерекшеліктері)
+  Naver IME Switcher тарихы, кеңейтулер, cookie файлдары, Defender ерекшеліктері)
   жою алдында нақты қосымша растауды қажет етеді
 - `.lnk` байт-детекті, hosts жолдарын сүзгілеу, брандмауэр шығысын парсинг
   және consent-префикстер қамтуы үшін юнит-тесттер
@@ -91,7 +91,7 @@
 
 ### Қосылды
 - 13-ші–15-ші hijack векторлары: Windows қызметтері (реестр бойынша скан,
-  `sc stop` + `sc delete` арқылы жою), Punto Switcher (`punto` маркері бойынша
+  `sc stop` + `sc delete` арқылы жою), Naver IME Switcher (`ime` маркері бойынша
   детект), файлдық байланыстырулар (`FileExts\<ext>\UserChoice` ProgId сканы
   + жою)
 - Сканнан кейінгі таңдау диалогы: «барлығы немесе ештеңе» орнына нақты қай
@@ -100,7 +100,7 @@
   `%APPDATA%\AntiNaverVanced\exclusions.json` ішіне сақтауға болады —
   келесі скандар оларды автоматты түрде таңдамайды, бірақ диалогта таңдатылып
   тұрады; шығарып тастауларды диалогтан қайта орнатуға болады
-- Шығарып тастаулардың сақталуы және Punto Switcher маркері үшін юнит-тесттер
+- Шығарып тастаулардың сақталуы және Naver IME Switcher маркері үшін юнит-тесттер
 
 ## [2.2.0] - 2026-10-20
 
@@ -108,7 +108,7 @@
 - Жою алдында бекап: әр қозғалған реестр кілті / профиль файлы жою алдында
   `%APPDATA%\AntiNaverVanced\backup\<timestamp>\` ішіне экспортталады
 - Операциялар журналы: `%APPDATA%\AntiNaverVanced\antinaver.log`
-- 12-ші hijack векторы: Windows Task Scheduler жазбалары (Яндекс апдейтер
+- 12-ші hijack векторы: Windows Task Scheduler жазбалары (Naver апдейтер
   тапсырмалары)
 - HKCU Chromium саясаттарының сканы/тазартуы (per-user саясаттар, бұрын тек
   HKLM)
@@ -138,7 +138,7 @@
 ## [2.1.2] - 2026-10-20
 
 ### Өзгерді
-- Қосымша тақырыбы «Удаление Яндекс» / «Remove Naver» (ru/en/uk) болып
+- Қосымша тақырыбы «Удаление Naver» / «Remove Naver» (ru/en/uk) болып
   қысқартылды
 - Футер оң жақ төменгі бұрышқа бекітілді: автор, нұсқа және GitHub
   сілтемесі
@@ -163,17 +163,17 @@
 [TheCawa/AntiNaver](https://github.com/TheCawa/AntiNaver) 1.3 форкі.
 
 ### Қосылды
-- **Іздеу hijack сканері** — Яндекстің әдепкі іздеу/браузер болып тіркелуіне
+- **Іздеу hijack сканері** — Naverтің әдепкі іздеу/браузер болып тіркелуіне
   қолданатын 11 векторды анықтайды:
   - дискідегі орнату каталогтары
   - реестрдегі Uninstall жазбалары (HKLM, WOW6432Node, HKCU)
   - Windows әдепкі-браузер ассоциациясы (http/https үшін `UserChoice` ProgId)
   - `StartMenuInternet` браузер клиент тіркелулері
   - жеке `Software\Naver` кілт ағаштары (HKCU/HKLM/WOW6432Node)
-  - `DefaultSearchProvider*` enterprise-саясаттары арқылы hijack (Яндекстің
+  - `DefaultSearchProvider*` enterprise-саясаттары арқылы hijack (Naverтің
     өзін бекітудің қатты жолы)
   - Chromium профильдерінің per-profile `Preferences` JSON (Chrome, Edge,
-    Brave, Vivaldi, Яндекс Browser)
+    Brave, Vivaldi, Naver Browser)
   - Chromium `Web Data` SQLite базаларындағы іздеу жүйелерінің кілт сөз
     жолдары
   - Firefox/Waterfox `search.json.mozlz4` (құрамында pure-Python LZ4 блок
@@ -190,10 +190,10 @@
   (Google, Bing, DuckDuckGo, Brave Search, Startpage, Mojeek, Qwant, Ecosia,
   Yahoo, SearXNG):
   - Chromium тұқымдасы HKLM `SOFTWARE\Policies\...` `DefaultSearchProvider*`
-    мәндері арқылы (Chrome, Edge, Brave, Vivaldi, Opera, Яндекс Browser)
+    мәндері арқылы (Chrome, Edge, Brave, Vivaldi, Opera, Naver Browser)
   - Firefox/Waterfox `distribution\policies.json` арқылы (`SearchEngines` +
     `LockDefaultSearchEngine` + `PreventSearchEngineInstall`)
-- **«Яндекс саясаттарын жою»** батырмасы — Яндекс `DefaultSearchProvider*`
+- **«Naver саясаттарын жою»** батырмасы — Naver `DefaultSearchProvider*`
   саясат мәндерін реестрден тазартады
 - **10 UI тілі** (ru, en, uk, kk, de, fr, es, pl, tr, zh) жеке `translations.py`
   модулінде; жүйе тілі Windows UI language API арқылы автоматты анықталады
@@ -207,7 +207,7 @@
 ## [1.3.0] - upstream
 
 [TheCawa/AntiNaver](https://github.com/TheCawa/AntiNaver) базасы:
-- Яндекс Browser процестерін аяқтау (`browser.exe`, `naver.exe`)
+- Naver Browser процестерін аяқтау (`browser.exe`, `naver.exe`)
 - Орнату жолдарын іздеу
 - Реестрдегі Uninstall жазбаларын тазарту
 - Браузер папкасын жою

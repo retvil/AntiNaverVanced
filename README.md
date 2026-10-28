@@ -2,19 +2,19 @@
 
 [![Release](https://img.shields.io/github/v/release/retvil/AntiNaverVanced?sort=date)](https://github.com/retvil/AntiNaverVanced/releases) [![Platform Windows](https://img.shields.io/badge/platform-Windows-blue)](https://github.com/retvil/AntiNaverVanced/releases) [![Python](https://img.shields.io/badge/python-3.10%2B-blue)](https://www.python.org/)
 
-**Remove Naver Browser completely and lock your default search against hijacking — 40 detection vectors, 10 search engines, 10 UI languages.**
+**Remove Naver Browser completely and lock your default search against hijacking — 28 detection vectors (VANCED) / 39 detection vectors (EXTENDED), 10 search engines, 10 UI languages.**
 
 **🇬🇧 English** | [🇷🇺 Русский](README.ru.md) | [🇺🇦 Українська](README.uk.md) | [🇰🇿 Қазақша](README.kk.md) | [🇩🇪 Deutsch](README.de.md) | [🇫🇷 Français](README.fr.md) | [🇪🇸 Español](README.es.md) | [🇵🇱 Polski](README.pl.md) | [🇹🇷 Türkçe](README.tr.md) | [🇨🇳 中文](README.zh.md)
 
 ## What is this?
 
-Naver doesn't just install a browser — it quietly registers itself as the default search and browser through forty different system mechanisms: registry associations, enterprise policies, per-profile browser settings, even search-engine databases inside Chromium profiles. Removing the browser alone doesn't undo all of that.
+Naver doesn't just install a browser — it quietly registers itself as the default search and browser through multiple system mechanisms: registry associations, enterprise policies, per-profile browser settings, even search-engine databases inside Chromium profiles. Removing the browser alone doesn't undo all of that.
 
-**AntiNaver Vanced** (a fork of [TheCawa/AntiNaver](https://github.com/TheCawa/AntiNaver)) finds **all 40 hijack vectors**, removes them with one click, and then **hard-locks your default search** to an engine of your choice via Windows enterprise policies — so nothing can silently take it back.
+**AntiNaver Vanced** (a fork of [TheCawa/AntiYandex](https://github.com/TheCawa/AntiYandex)) finds **all hijack vectors** (28 in VANCED, 39 in EXTENDED), removes them with one click, and then **hard-locks your default search** to an engine of your choice via Windows enterprise policies — so nothing can silently take it back.
 
 ## Features
 
-- **Hijack scanner** — detects 40 vectors: install paths, uninstall registry entries, `UserChoice` default-browser association, `StartMenuInternet` registrations, `Software\Naver` key trees, `DefaultSearchProvider*` policy hijack, Chromium profile `Preferences`, `Web Data` SQLite keywords, Firefox `search.json.mozlz4`, legacy `SearchScopes`, autostart entries, scheduled tasks, Windows services, IME Switcher, file associations, Naver Disk shell integration, disabled autostart, App Paths, shortcuts, ProgramData/Roaming leftovers, hosts entries, firewall rules, URI protocols, browser extensions, naver.ru cookies, open-with associations, Prefetch/WER traces, Defender exclusions, keyboard layouts, IE Start Page hijack, startup-URL policies (`RestoreOnStartupURLs`), Firefox homepage, IE zone map, RegisteredApplications entries, MUICache traces, %TEMP% installers, Store apps (Naver Music, Alice), product directories, local data directories, Naver.DNS
+- **Hijack scanner** — detects 28 vectors (VANCED) / 39 vectors (EXTENDED): install paths, uninstall registry entries, `UserChoice` default-browser association, `StartMenuInternet` registrations, `Software\Naver` key trees, `DefaultSearchProvider*` policy hijack, Chromium profile `Preferences`, `Web Data` SQLite keywords, Firefox `search.json.mozlz4`, legacy `SearchScopes`, autostart entries, scheduled tasks, Windows services, IME Switcher, file associations, Naver Disk shell integration, disabled autostart, App Paths, shortcuts, ProgramData/Roaming leftovers, hosts entries, firewall rules, URI protocols, browser extensions, naver.ru cookies, open-with associations, Prefetch/WER traces, Defender exclusions, keyboard layouts, IE Start Page hijack, startup-URL policies (`RestoreOnStartupURLs`), Firefox homepage, IE zone map, RegisteredApplications entries, MUICache traces, %TEMP% installers, Store apps (Naver Music), product directories, local data directories, Naver.DNS
 - **One-click removal** — every detected vector is removed with a dedicated remover; locked databases are reported, never crash
 - **Hard search policy** — locks the default search to one of 10 engines (Google, Bing, DuckDuckGo, Brave Search, Startpage, Mojeek, Qwant, Ecosia, Yahoo, SearXNG) via HKLM policies for Chrome, Edge, Brave, Vivaldi, Opera and Naver Browser, plus `policies.json` for Firefox/Waterfox
 - **Policy cleanup** — strips Naver `DefaultSearchProvider*` values from the registry
@@ -67,7 +67,7 @@ Build your own EXE: run `build.bat` (PyInstaller, output in `dist/`).
 
 ## Author & support
 
-**Nod33Eset** — fork of [TheCawa/AntiNaver](https://github.com/TheCawa/AntiNaver). Issues and PRs are welcome.
+**Nod33Eset** — fork of [TheCawa/AntiYandex](https://github.com/TheCawa/AntiYandex). Issues and PRs are welcome.
 
 If the tool saved you from Naver, you can support development:
 
@@ -82,3 +82,4 @@ If the tool saved you from Naver, you can support development:
 ## License
 
 MIT — see [LICENSE](LICENSE).
+

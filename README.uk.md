@@ -2,7 +2,7 @@
 
 [![Release](https://img.shields.io/github/v/release/retvil/AntiNaverVanced?sort=date)](https://github.com/retvil/AntiNaverVanced/releases) [![Platform Windows](https://img.shields.io/badge/platform-Windows-blue)](https://github.com/retvil/AntiNaverVanced/releases) [![Python](https://img.shields.io/badge/python-3.10%2B-blue)](https://www.python.org/)
 
-**Повне видалення Naver.Браузера та жорсткий захист пошуку за замовчуванням від захоплення — 40 векторів детекту, 10 пошуковиків, 10 мов інтерфейсу.**
+**Повне видалення Naver.Браузера та жорсткий захист пошуку за замовчуванням від захоплення — 28 вектор (VANCED) / 39 (EXTENDED)ів детекту, 10 пошуковиків, 10 мов інтерфейсу.**
 
 [🇬🇧 English](README.md) | [🇷🇺 Русский](README.ru.md) | **🇺🇦 Українська** | [🇰🇿 Қазақша](README.kk.md) | [🇩🇪 Deutsch](README.de.md) | [🇫🇷 Français](README.fr.md) | [🇪🇸 Español](README.es.md) | [🇵🇱 Polski](README.pl.md) | [🇹🇷 Türkçe](README.tr.md) | [🇨🇳 中文](README.zh.md)
 
@@ -10,11 +10,11 @@
 
 Naver встановлює не просто браузер — він тихо прописується пошуком і браузером за замовчуванням через сорок різних механізмів системи: асоціації в реєстрі, enterprise-політики, налаштування профілів браузерів, навіть бази пошуковиків усередині профілів Chromium. Видалення одного браузера цього не скасовує.
 
-**AntiNaver Vanced** (форк [TheCawa/AntiNaver](https://github.com/TheCawa/AntiNaver)) знаходить **усі 40 векторів захоплення**, прибирає їх однією кнопкою, а потім **жорстко закріплює пошук за замовчуванням** за обраним пошуковиком через enterprise-політики Windows — щоб ніщо не могло тихо повернути все назад.
+**AntiNaver Vanced** (форк [TheCawa/AntiYandex](https://github.com/TheCawa/AntiYandex)) знаходить **усі 28 вектор (VANCED) / 39 (EXTENDED)ів захоплення**, прибирає їх однією кнопкою, а потім **жорстко закріплює пошук за замовчуванням** за обраним пошуковиком через enterprise-політики Windows — щоб ніщо не могло тихо повернути все назад.
 
 ## Можливості
 
-- **Сканер захоплення** — детект 40 векторів: шляхи встановлення, записи Uninstall у реєстрі, асоціація `UserChoice`, реєстрації `StartMenuInternet`, дерева ключів `Software\Naver`, hijack через політики `DefaultSearchProvider*`, `Preferences` профілів Chromium, ключові слова в `Web Data` (SQLite), `search.json.mozlz4` Firefox, legacy `SearchScopes`, автозапуск, планувальник задач, служби Windows, IME Switcher, файлові асоціації, інтеграція Naver.Диска в провіднику, вимкнений автозапуск, App Paths, ярлики, залишки в ProgramData/Roaming, записи в hosts, правила брандмауера, URI-протоколи, розширення браузерів, куки naver.ru, асоціації «відкрити за допомогою», сліди Prefetch/WER, винятки Defender, розкладки клавіатури, hijack стартової сторінки IE, політики стартових URL (`RestoreOnStartupURLs`), домашня сторінка Firefox, зона IE (zone map), записи RegisteredApplications, сліди MUICache, інсталятори в %TEMP%, Store-застосунки (Naver Музика, Алиса), каталоги продуктів, каталоги локальних даних, Naver.DNS
+- **Сканер захоплення** — детект 28 вектор (VANCED) / 39 (EXTENDED)ів: шляхи встановлення, записи Uninstall у реєстрі, асоціація `UserChoice`, реєстрації `StartMenuInternet`, дерева ключів `Software\Naver`, hijack через політики `DefaultSearchProvider*`, `Preferences` профілів Chromium, ключові слова в `Web Data` (SQLite), `search.json.mozlz4` Firefox, legacy `SearchScopes`, автозапуск, планувальник задач, служби Windows, IME Switcher, файлові асоціації, інтеграція Naver.Диска в провіднику, вимкнений автозапуск, App Paths, ярлики, залишки в ProgramData/Roaming, записи в hosts, правила брандмауера, URI-протоколи, розширення браузерів, куки naver.ru, асоціації «відкрити за допомогою», сліди Prefetch/WER, винятки Defender, розкладки клавіатури, hijack стартової сторінки IE, політики стартових URL (`RestoreOnStartupURLs`), домашня сторінка Firefox, зона IE (zone map), записи RegisteredApplications, сліди MUICache, інсталятори в %TEMP%, Store-застосунки (Naver Музика, Алиса), каталоги продуктів, каталоги локальних даних, Naver.DNS
 - **Видалення в один клік** — у кожного вектора свій remover; заблоковані бази чесно репортяться, без крашів
 - **Жорстка політика пошуку** — закріплює пошук за одним із 10 пошуковиків (Google, Bing, DuckDuckGo, Brave Search, Startpage, Mojeek, Qwant, Ecosia, Yahoo, SearXNG) через HKLM-політики для Chrome, Edge, Brave, Vivaldi, Opera та Naver.Браузера + `policies.json` для Firefox/Waterfox
 - **Чистка политик** — вичищає значення `DefaultSearchProvider*` Naverа з реєстру
@@ -67,7 +67,7 @@ python main.py
 
 ## Автор і підтримка
 
-**Nod33Eset** — форк [TheCawa/AntiNaver](https://github.com/TheCawa/AntiNaver). Issues та PR — вітаються.
+**Nod33Eset** — форк [TheCawa/AntiYandex](https://github.com/TheCawa/AntiYandex). Issues та PR — вітаються.
 
 Якщо інструмент позбавив вас від Naverа — можна підтримати розробку:
 
@@ -82,3 +82,5 @@ python main.py
 ## Ліцензія
 
 MIT — див. [LICENSE](LICENSE).
+
+

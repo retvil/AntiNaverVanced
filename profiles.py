@@ -67,7 +67,7 @@ _EXTENDED_ONLY: frozenset[str] = frozenset({
     "scan_firewall_rules",
     "scan_defender_exclusions",
     "scan_keyboard_layouts",     # Naver IME
-    "scan_store_apps",           # Naver Music / Alice / Messenger (Appx)
+    "scan_store_apps",           # Naver Music / Messenger / Messenger (Appx)
     "scan_product_dirs",         # Program Files\Naver\* non-browser products
     "scan_local_data_dirs",      # %LOCALAPPDATA%\Naver\* non-browser data
     "scan_dns_servers",          # Naver.DNS (77.88.8.x) in network adapters

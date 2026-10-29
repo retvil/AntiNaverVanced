@@ -26,7 +26,7 @@ Naver n'installe pas qu'un navigateur — il s'enregistre silencieusement comme 
 <details>
 <summary>Fenêtre principale</summary>
 
-![Fenêtre principale d'AntiNaverVanced](docs/screenshot.png)
+![Fenêtre principale d'AntiNaverVanced](screenshot.png)
 
 </details>
 
@@ -81,7 +81,7 @@ Si l'outil t'a débarrassé de Naver, tu peux soutenir le développement :
 
 ## Licence
 
-MIT — voir [LICENSE](LICENSE).
+MIT — voir [LICENSE](../LICENSE).
 
 
 

@@ -26,7 +26,7 @@ Naver жай ғана браузер орнатпайды — ол жүйені�
 <details>
 <summary>Негізгі терезе</summary>
 
-![AntiNaverVanced негізгі терезесі](docs/screenshot.png)
+![AntiNaverVanced негізгі терезесі](screenshot.png)
 
 </details>
 
@@ -81,7 +81,7 @@ python main.py
 
 ## Лицензия
 
-MIT — қ. [LICENSE](LICENSE).
+MIT — қ. [LICENSE](../LICENSE).
 
 
 

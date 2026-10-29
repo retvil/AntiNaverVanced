@@ -26,7 +26,7 @@ Naver ставит не просто браузер — он тихо пропи
 <details>
 <summary>Главное окно</summary>
 
-![Главное окно AntiNaverVanced](docs/screenshot.png)
+![Главное окно AntiNaverVanced](screenshot.png)
 
 </details>
 
@@ -81,7 +81,7 @@ python main.py
 
 ## Лицензия
 
-MIT — см. [LICENSE](LICENSE).
+MIT — см. [LICENSE](../LICENSE).
 
 
 

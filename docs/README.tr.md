@@ -26,7 +26,7 @@ Naver yalnızca bir tarayıcı kurmaz — kırk farklı sistem mekanizmasıyla s
 <details>
 <summary>Ana pencere</summary>
 
-![AntiNaverVanced ana penceresi](docs/screenshot.png)
+![AntiNaverVanced ana penceresi](screenshot.png)
 
 </details>
 
@@ -81,7 +81,7 @@ Araç sizi Naver'ten kurtardıysa, geliştirmeyi destekleyebilirsiniz:
 
 ## Lisans
 
-MIT — bkz. [LICENSE](LICENSE).
+MIT — bkz. [LICENSE](../LICENSE).
 
 
 

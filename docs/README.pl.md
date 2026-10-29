@@ -26,7 +26,7 @@ Naver nie instaluje tylko przeglądarki — po cichu rejestruje się jako domyś
 <details>
 <summary>Okno główne</summary>
 
-![Okno główne AntiNaverVanced](docs/screenshot.png)
+![Okno główne AntiNaverVanced](screenshot.png)
 
 </details>
 
@@ -81,7 +81,7 @@ Jeśli narzędzie uwolniło Cię od Navera — możesz wesprzeć rozwój:
 
 ## Licencja
 
-MIT — zob. [LICENSE](LICENSE).
+MIT — zob. [LICENSE](../LICENSE).
 
 
 

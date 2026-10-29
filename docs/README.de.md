@@ -26,7 +26,7 @@ Naver installiert nicht nur einen Browser — es trägt sich still über vierzig
 <details>
 <summary>Hauptfenster</summary>
 
-![AntiNaverVanced Hauptfenster](docs/screenshot.png)
+![AntiNaverVanced Hauptfenster](screenshot.png)
 
 </details>
 
@@ -81,7 +81,7 @@ Wenn dich das Tool von Naver befreit hat, kannst du die Entwicklung unterstütze
 
 ## Lizenz
 
-MIT — siehe [LICENSE](LICENSE).
+MIT — siehe [LICENSE](../LICENSE).
 
 
 
